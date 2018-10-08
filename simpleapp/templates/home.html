@@ -3,6 +3,7 @@
 {% block content %}
 
 <h1>Mega Store Laptop Shop</h1>
+<p>Enter a New Laptop Product into Database: <span><a href="{% url 'create' %}"> New Laptop >></a> </p>
 <ul>
     {% for obj in object_list %}
     <li><a href="{{obj.slug}}" >Laptop Name: {{obj.name}} </a> 

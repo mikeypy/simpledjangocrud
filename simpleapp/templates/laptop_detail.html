@@ -1,0 +1,13 @@
+{% extends "base.html "%}
+
+{% block content %}
+
+<h1>Laptop Name: {{ object.name }}</h1>
+<p>Quantity Available : {{ object.quantity }}</p>
+<p>Date Added: {{ object.timestamp }}</p>
+<p>Last Modified: {{ object.updated | timesince }} ago </p>
+<p><span><a href="{% url 'home' %}"> <<< Home Page</a></span></p>
+
+
+
+{% endblock %}
